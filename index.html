@@ -21,6 +21,20 @@
 
     gtag('config', 'G-WN4MCL9LML');
   </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body class="font-sans text-gray-800">
   <!-- Header & Navigation -->
@@ -39,14 +53,14 @@
   <!-- Hero Banner -->
   <section class="bg-cover bg-center h-[60vh] flex items-center justify-center" style="background-image:url('images/bamboohero.png')">
     <div class="bg-black/50 p-10 rounded-2xl text-center max-w-2xl">
-      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Start Your Bamboo Journey</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Start Your Bamboo Grove</h1>
       <p class="text-lg text-slate-200 mb-8">Hardy rhizomes shipped straight from our Georgia nursery – arrive ready to thrive.</p>
       <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-8 py-3 rounded-xl shadow-lg transition">Browse Our eBay Store</a>
     </div>
   </section>
 
   <!-- Product Showcase -->
-  <section id="products" class="py-16">
+  <section id="products" class="py-16 fade-in-section">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Featured Rhizomes</h2>
       <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -87,7 +101,7 @@
   </section>
 
   <!-- Why Bamboo? Quick Facts -->
-  <section id="why" class="bg-gray-100 py-16">
+  <section id="why" class="bg-gray-100 py-16 fade-in-section">
     <div class="max-w-4xl mx-auto px-6 text-lg leading-relaxed space-y-6">
       <h2 class="text-3xl font-bold text-center mb-6">Why Bamboo?</h2>
       <ul class="list-disc pl-6 space-y-2">
@@ -124,7 +138,7 @@
   </section>
 
   <!-- About / SEO Section -->
-  <section id="about" class="bg-gray-50 py-16">
+  <section id="about" class="bg-gray-50 py-16 fade-in-section">
     <div class="max-w-4xl mx-auto px-6 text-lg leading-relaxed space-y-6">
       <h2 class="text-3xl font-bold text-center mb-6">Why Choose Our Bamboo?</h2>
       <p>Whether you’re creating a whispering privacy hedge, crafting sustainable garden stakes, or shaping an authentic Japanese tea garden, healthy rhizomes are the key to a thriving grove. We dig and ship <strong>the same day</strong> so your plants arrive vigorous and ready to establish.</p>
@@ -146,5 +160,28 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.fade-in-section');
+      const options = {
+        root: null, // relative to document viewport 
+        rootMargin: '0px',
+        threshold: 0.1 // 10% of item is visible
+      };
+
+      const observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target); // Stop observing once visible
+          }
+        });
+      }, options);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
 </body>
 </html>
