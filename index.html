@@ -80,7 +80,7 @@
   <!-- Header & Navigation -->
   <header class="bg-green-900 text-white">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-      <a href="#" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+      <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <img src="images/bambuiplants-redpanda.png" alt="Bambuiplants Logo" class="h-10 w-auto" />
         <span class="text-2xl font-extrabold tracking-wide">Bambuiplants</span>
       </a>
@@ -88,8 +88,16 @@
         <a href="#products" class="hover:text-yellow-300">Rhizomes</a>
         <a href="#about" class="hover:text-yellow-300">About</a>
         <a href="#why" class="hover:text-yellow-300">Gallery / Info</a>
-        <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener" class="bg-yellow-300 text-black px-4 py-2 rounded-lg font-semibold shadow hover:bg-yellow-400">Shop on eBay</a>
-        <a href="https://bambuiplants.etsy.com" target="_blank" rel="noopener" class="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-orange-600">Shop on Etsy</a>
+        <!-- eBay Store Link -->
+        <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener"
+           class="inline-block bg-yellow-300 text-black px-4 py-2 rounded-lg font-semibold shadow hover:bg-yellow-400 transition">
+          Shop on eBay
+        </a>
+        <!-- Etsy Shop Link -->
+        <a href="https://www.etsy.com/shop/BambuiPlants" target="_blank" rel="noopener"
+           class="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold shadow hover:bg-orange-600 transition">
+          Shop on Etsy
+        </a>
       </nav>
     </div>
   </header>
@@ -100,8 +108,16 @@
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Start Your Bamboo Grove</h1>
       <p class="text-lg text-slate-200 mb-8">Hardy rhizomes shipped straight from our Georgia nursery – arrive ready to thrive.</p>
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener" class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-8 py-3 rounded-xl shadow-lg transition">Browse Our eBay Store</a>
-        <a href="https://bambuiplants.etsy.com" target="_blank" rel="noopener" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition">Browse Our Etsy Shop</a>
+        <!-- eBay Store Button -->
+        <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener"
+           class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-8 py-3 rounded-xl shadow-lg transition">
+          Browse Our eBay Store
+        </a>
+        <!-- Etsy Shop Button -->
+        <a href="https://www.etsy.com/shop/BambuiPlants" target="_blank" rel="noopener"
+           class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition">
+          Browse Our Etsy Shop
+        </a>
       </div>
     </div>
   </section>
@@ -111,40 +127,87 @@
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Featured Rhizomes</h2>
       <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group" data-href="https://www.ebay.com/itm/306266066473">
+        <!-- Black Bamboo – 6 Rhizomes -->
+        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group"
+                 data-href="https://www.ebay.com/itm/306266066473">
           <img src="images/black6.png" alt="Black Bamboo – 6 Rhizomes" class="h-48 w-full object-cover" />
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold mb-2 group-hover:text-green-700">Black Bamboo – 6 Rhizomes</h3>
             <p class="text-green-700 font-bold text-lg mb-1">$79.92</p>
             <p class="text-xs text-gray-500 mb-4 group-hover:text-green-600">✓ Ships in 24h</p>
-            <a href="https://www.ebay.com/itm/306266066473" target="_blank" rel="noopener" class="mt-auto inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg text-center font-semibold">View on eBay</a>
+            <div class="mt-auto flex gap-2">
+              <a href="https://www.ebay.com/itm/306266066473" target="_blank" rel="noopener"
+                 class="flex-1 bg-green-700 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on eBay
+              </a>
+              <a href="https://www.etsy.com/listing/1892062324/black-bamboo-rhizomes-phyllostachys" target="_blank" rel="noopener"
+                 class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on Etsy
+              </a>
+            </div>
           </div>
         </article>
-        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group" data-href="https://www.ebay.com/itm/305674538917">
+
+        <!-- Black Bamboo – 3 Rhizomes -->
+        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group"
+                 data-href="https://www.ebay.com/itm/305674538917">
           <img src="images/black3.png" alt="Black Bamboo – 3 Rhizomes" class="h-48 w-full object-cover" />
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold mb-2 group-hover:text-green-700">Black Bamboo – 3 Rhizomes</h3>
             <p class="text-green-700 font-bold text-lg mb-1">$49.95</p>
             <p class="text-xs text-gray-500 mb-4 group-hover:text-green-600">✓ Ships in 24h</p>
-            <a href="https://www.ebay.com/itm/305674538917" target="_blank" rel="noopener" class="mt-auto inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg text-center font-semibold">View on eBay</a>
+            <div class="mt-auto flex gap-2">
+              <a href="https://www.ebay.com/itm/305674538917" target="_blank" rel="noopener"
+                 class="flex-1 bg-green-700 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on eBay
+              </a>
+              <a href="https://www.etsy.com/listing/1892062324/black-bamboo-rhizomes-phyllostachys" target="_blank" rel="noopener"
+                 class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on Etsy
+              </a>
+            </div>
           </div>
         </article>
-        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group" data-href="https://www.ebay.com/itm/305827288944">
+
+        <!-- Madake Bamboo – 3 Rhizomes -->
+        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group"
+                 data-href="https://www.ebay.com/itm/305827288944">
           <img src="images/madake3.png" alt="Madake Bamboo – 3 Rhizomes" class="h-48 w-full object-cover" />
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold mb-2 group-hover:text-green-700">Madake Bamboo – 3 Rhizomes</h3>
             <p class="text-green-700 font-bold text-lg mb-1">$49.95</p>
             <p class="text-xs text-gray-500 mb-4 group-hover:text-green-600">✓ Ships in 24h</p>
-            <a href="https://www.ebay.com/itm/305827288944" target="_blank" rel="noopener" class="mt-auto inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg text-center font-semibold">View on eBay</a>
+            <div class="mt-auto flex gap-2">
+              <a href="https://www.ebay.com/itm/305827288944" target="_blank" rel="noopener"
+                 class="flex-1 bg-green-700 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on eBay
+              </a>
+              <a href="https://www.etsy.com/listing/1906264877/madake-bamboo-rhizomes-phyllostachys" target="_blank" rel="noopener"
+                 class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on Etsy
+              </a>
+            </div>
           </div>
         </article>
-        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group" data-href="https://www.ebay.com/itm/305675070872">
+
+        <!-- Madake Bamboo – 6 Rhizomes -->
+        <article class="bg-white rounded-2xl shadow-lg flex flex-col overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300 group"
+                 data-href="https://www.ebay.com/itm/305675070872">
           <img src="images/madake6.png" alt="Madake Bamboo – 6 Rhizomes" class="h-48 w-full object-cover" />
           <div class="p-6 flex flex-col flex-1">
             <h3 class="text-xl font-semibold mb-2 group-hover:text-green-700">Madake Bamboo – 6 Rhizomes</h3>
             <p class="text-green-700 font-bold text-lg mb-1">$79.92</p>
             <p class="text-xs text-gray-500 mb-4 group-hover:text-green-600">✓ Ships in 24h</p>
-            <a href="https://www.ebay.com/itm/305675070872" target="_blank" rel="noopener" class="mt-auto inline-block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg text-center font-semibold">View on eBay</a>
+            <div class="mt-auto flex gap-2">
+              <a href="https://www.ebay.com/itm/305675070872" target="_blank" rel="noopener"
+                 class="flex-1 bg-green-700 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on eBay
+              </a>
+              <a href="https://www.etsy.com/listing/1906264877/madake-bamboo-rhizomes-phyllostachys" target="_blank" rel="noopener"
+                 class="flex-1 bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg text-center font-semibold transition">
+                View on Etsy
+              </a>
+            </div>
           </div>
         </article>
       </div>
@@ -188,7 +251,7 @@
           <ul class="list-disc pl-6 space-y-2 mt-4">
             <li><strong>Cold-hardy selections</strong> tested in USDA Zones 7-10.</li>
             <li><strong>Pest-free & organic</strong> – grown without synthetic chemicals.</li>
-            <li><strong>Bulk discounts</strong> – need more than two packs? Check the eBay listings for automatic savings.</li>
+            <li><strong>Bulk discounts</strong> – need more than two packs? Check our eBay listings for automatic savings.</li>
           </ul>
         </div>
         <img src="images/red-panda-bamboo.png" alt="Cute red panda with bamboo" class="w-40 h-auto rounded-lg mt-6 md:mt-0" />
@@ -202,11 +265,12 @@
       <p>&copy; 2025 Bambuiplants. All rights reserved.</p>
       <div class="space-x-6">
         <a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener" class="underline">eBay Store</a>
-        <a href="https://bambuiplants.etsy.com" target="_blank" rel="noopener" class="underline">Etsy Shop</a>
+        <a href="https://www.etsy.com/shop/BambuiPlants" target="_blank" rel="noopener" class="underline">Etsy Shop</a>
         <a href="mailto:bambuiplants@gmail.com" class="underline">Contact</a>
       </div>
     </div>
   </footer>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('.fade-in-section');
