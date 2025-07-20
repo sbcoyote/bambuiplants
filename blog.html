@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bamboo 101 Blog - Bambuiplants</title>
+    <meta name="description" content="Expert advice on choosing, planting, and caring for bamboo. Learn about running vs. clumping, container gardening, and more." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN4MCL9LML"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WN4MCL9LML');
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; background-color: #22c55e; transition: all 0.3s ease-in-out; transform: translateX(-50%); }
+        .nav-link:hover::after { width: 100%; }
+        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2em; margin-bottom: 1em; border-bottom: 2px solid #10b981; padding-bottom: 0.5em; color: #1f2937;}
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 1.5em; margin-bottom: 1em; color: #111827;}
+        .prose p, .prose ul, .prose li { margin-bottom: 1em; color: #4b5563; font-size: 1.125rem; line-height: 1.75; }
+        .prose ul { list-style-position: inside; list-style-type: disc; padding-left: 1.5rem;}
+        .prose strong { color: #1f2937; }
+        .prose .note { background-color: #f0fdf4; border-left: 4px solid #22c55e; padding: 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem; border-radius: 0.25rem;}
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="images/bambuiplants-redpanda.png" alt="Bambuiplants Logo" class="h-10 w-auto" />
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-green-600">Bambui<span class="text-gray-700">plants</span></span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Home</a>
+                <a href="shop.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Shop</a>
+                <a href="guides.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Planting Guides</a>
+                <a href="blog.html" class="nav-link text-green-600 hover:text-green-600 font-semibold">Bamboo 101</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">About Us</a>
+            </nav>
+            <div class="flex items-center">
+                 <a href="shop.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Shop Now</a>
+                 <button id="mobile-menu-btn" class="md:hidden ml-4 p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none" aria-label="Open main menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                 </button>
+            </div>
+        </div>
+        <div id="mobile-nav" class="hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="shop.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Shop</a>
+            <a href="guides.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Planting Guides</a>
+            <a href="blog.html" class="block py-2 px-6 text-sm text-green-600 hover:bg-gray-50">Bamboo 101</a>
+            <a href="about.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">About Us</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold">Bamboo 101 Blog</h1>
+                <p class="text-lg text-gray-600 mt-4">Your complete resource for bamboo knowledge. From planting tips to creative uses, we've got you covered.</p>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="space-y-16">
+                
+                <!-- Post 1 -->
+                <article id="post1" class="prose lg:prose-xl max-w-none">
+                    <img src="https://placehold.co/800x450/93C572/FFFFFF?text=Running+vs+Clumping" alt="Illustration comparing running and clumping bamboo root systems" class="w-full rounded-lg shadow-md mb-8">
+                    <h2>Running vs. Clumping: Which is Right for You?</h2>
+                    <p>This is the most important decision for any bamboo grower. Choosing the right type of bamboo from the start will save you time and effort, ensuring you get the results you want without any surprises. Let's break down the key differences.</p>
+                    
+                    <h3>Running Bamboo (Leptomorphic)</h3>
+                    <p>Running bamboos, like the <strong>Phyllostachys</strong> genus we sell, are famous for their ability to create dense privacy screens quickly. Their root system, called rhizomes, grows horizontally underground and can travel long distances before sending up new shoots (culms).</p>
+                    <ul>
+                        <li><strong>Best For:</strong> Fast privacy screens, large open areas, groves, and timber production.</li>
+                        <li><strong>Growth Habit:</strong> Spreads aggressively. New shoots can appear many feet away from the parent plant.</li>
+                        <li><strong>Containment:</strong> Because they spread, running bamboos require a root barrier (a thick plastic sheet buried 24-30 inches deep) to keep them contained in a specific area. This is a crucial step for responsible planting in suburban environments.</li>
+                    </ul>
+
+                    <h3>Clumping Bamboo (Pachymorphic)</h3>
+                    <p>Clumping bamboos have a very different root structure. Their rhizomes are short, thick, and U-shaped, causing new culms to grow very close to the existing ones. The plant expands slowly and predictably outwards from the center, much like an ornamental grass.</p>
+                    <ul>
+                        <li><strong>Best For:</strong> Smaller gardens, specimen plantings, container gardening, and situations where you don't want any spreading.</li>
+                        <li><strong>Growth Habit:</strong> Forms a tight, circular clump that gradually increases in diameter each year.</li>
+                        <li><strong>Containment:</strong> No root barrier is needed! A clumping bamboo will not take over your yard or your neighbor's. You just need to allocate enough space for its mature footprint.</li>
+                    </ul>
+
+                    <div class="note">
+                        <p class="font-bold">The Bottom Line:</p>
+                        <p>If you need a fast, dense screen and are prepared to install a root barrier, <strong>running bamboo</strong> is an excellent choice. If you want a well-behaved, non-invasive plant for a specific spot, choose <strong>clumping bamboo</strong>.</p>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article id="post2" class="prose lg:prose-xl max-w-none">
+                    <img src="https://placehold.co/800x450/A2D4A2/FFFFFF?text=Container+Gardening" alt="Bamboo growing in a large pot on a patio" class="w-full rounded-lg shadow-md mb-8">
+                    <h2>The Ultimate Guide to Growing Bamboo in Pots</h2>
+                    <p>Growing bamboo in containers is a fantastic way to create a portable privacy screen, add a touch of green to a patio, or control the growth of a running variety. Success is easy if you follow a few key principles.</p>
+                    
+                    <h3>Choosing the Right Pot</h3>
+                    <p>The bigger, the better. A larger pot holds more soil, which means more moisture and nutrients for your plant. We recommend starting with a pot that is at least <strong>15-20 gallons</strong> in size. A wide, shallow pot is often better than a tall, narrow one. Make sure it has plenty of drainage holes!</p>
+
+                    <h3>The Best Soil Mix</h3>
+                    <p>Do not use soil from your garden, as it will compact and drain poorly. Use a high-quality commercial potting mix. For even better results, create your own mix by combining:</p>
+                    <ul>
+                        <li>50% Potting Mix</li>
+                        <li>20% Peat Moss or Coco Coir (for moisture retention)</li>
+                        <li>30% Perlite or Small Pine Bark (for drainage)</li>
+                    </ul>
+
+                    <h3>Watering and Feeding</h3>
+                    <p>Potted plants dry out much faster than those in the ground. In the heat of summer, you may need to water every day. Always check the soil first. Feed your container bamboo with a balanced, slow-release fertilizer in the spring. A liquid fertilizer applied every few weeks during the growing season also works well.</p>
+
+                    <div class="note">
+                        <p class="font-bold">Repotting is a Must</p>
+                        <p>Every 2-4 years, your bamboo will likely become root-bound. You'll need to remove the plant, divide the root ball with a saw or sharp spade, and repot a section of it with fresh soil. This is a great way to get more plants!</p>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article id="post3" class="prose lg:prose-xl max-w-none">
+                    <img src="https://placehold.co/800x450/8A9A5B/FFFFFF?text=Dormant+Rhizome" alt="A dormant bamboo rhizome with small buds" class="w-full rounded-lg shadow-md mb-8">
+                    <h2>Why Isn't My Bamboo Sprouting? A Guide to Dormancy</h2>
+                    <p>You've planted your new bamboo rhizome, you're watering it, and... nothing is happening. Don't panic! This is one of the most common concerns for new bamboo growers, and the answer is usually simple: your plant is busy doing important work underground.</p>
+                    
+                    <h3>The First Year Rule: Sleep, Creep, Leap</h3>
+                    <p>Bamboo follows a well-known three-year establishment pattern:</p>
+                    <ul>
+                        <li><strong>Year 1 (Sleep):</strong> The plant focuses almost all of its energy on developing a strong root system. You may see very little or no new top growth. This is completely normal.</li>
+                        <li><strong>Year 2 (Creep):</strong> With a solid root foundation, the plant will start to send up a few new, small shoots. You'll begin to see the plant expand.</li>
+                        <li><strong>Year 3 (Leap):</strong> This is the year the magic happens! With a fully established root system, the plant will send up numerous, full-sized culms, and you'll see the explosive growth bamboo is famous for.</li>
+                    </ul>
+
+                    <h3>What to Do While You Wait</h3>
+                    <p>The key is patience and consistent care. Even if you don't see anything happening above ground, continue to provide the essentials:</p>
+                    <ul>
+                        <li><strong>Consistent Moisture:</strong> Keep the soil moist but not waterlogged. This is the most critical factor for root development.</li>
+                        <li><strong>Mulch:</strong> A good layer of mulch will protect the developing rhizomes and retain soil moisture.</li>
+                        <li><strong>Sunlight:</strong> Ensure the planting area is getting adequate sun to fuel the underground growth.</li>
+                    </ul>
+
+                    <div class="note">
+                        <p class="font-bold">How to Check if it's Still Alive</p>
+                        <p>If you're really concerned, you can gently scratch the surface of the rhizome with your fingernail. If you see green or white fleshy material, it's alive and well. If it's brown, dry, and hollow, it may not have survived.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                  <h3 class="text-lg font-semibold mb-4">Bambuiplants</h3>
+                  <p class="text-gray-400">Your partner in creating beautiful, sustainable landscapes with bamboo.</p>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                  <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                    <li><a href="shop.html" class="text-gray-400 hover:text-white">Shop All Bamboo</a></li>
+                    <li><a href="guides.html" class="text-gray-400 hover:text-white">Planting Guides</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-white">Bamboo 101 Blog</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-4">Our Stores</h3>
+                  <ul class="space-y-2">
+                    <li><a href="https://www.etsy.com/shop/BambuiPlants" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">Etsy Shop</a></li>
+                    <li><a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">eBay Store</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                  <p class="text-gray-400 mb-2">Have a question? We'd love to hear from you.</p>
+                  <a href="mailto:bambuiplants@gmail.com" class="text-green-400 hover:text-white transition-colors">bambuiplants@gmail.com</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Bambuiplants. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
