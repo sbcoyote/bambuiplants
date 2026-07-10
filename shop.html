@@ -1,157 +1,306 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop All Bamboo - Bambuiplants</title>
-    <meta name="description" content="Browse our selection of high-quality running bamboo, including Black Bamboo and Madake Bamboo. Healthy, vigorous rhizomes shipped from our nursery." />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN4MCL9LML"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WN4MCL9LML');
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Shop Bamboo Rhizomes | Bambuiplants</title>
+    <meta
+      name="description"
+      content="Compare Black Bamboo and Madake bamboo rhizomes from Bambuiplants. Buy through our Etsy or eBay stores and get guidance for successful planting."
+    />
+    <link rel="canonical" href="https://bambuiplants.com/shop.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shop Bamboo Rhizomes | Bambuiplants" />
+    <meta
+      property="og:description"
+      content="Compare nursery-direct Black Bamboo and Madake rhizomes."
+    />
+    <meta property="og:url" content="https://bambuiplants.com/shop.html" />
+    <meta
+      property="og:image"
+      content="https://bambuiplants.com/images/black-bamboo.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Black Bamboo Rhizomes",
+            "description": "Running bamboo rhizomes for privacy screens.",
+            "brand": { "@type": "Brand", "name": "Bambuiplants" },
+            "offers": {
+              "@type": "Offer",
+              "price": "19.95",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://bambuiplants.etsy.com/listing/1892062324/black-bamboo-rhizomes-1-12-pack"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Madake Bamboo Rhizomes",
+            "description": "Running timber bamboo rhizomes for large landscapes.",
+            "brand": { "@type": "Brand", "name": "Bambuiplants" },
+            "offers": {
+              "@type": "Offer",
+              "price": "19.95",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://bambuiplants.etsy.com/listing/1906264877/madake-bamboo-rhizomes-1-12-pack"
+            }
+          }
+        ]
+      }
     </script>
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .nav-link { position: relative; }
-        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 50%; background-color: #22c55e; transition: all 0.3s ease-in-out; transform: translateX(-50%); }
-        .nav-link:hover::after { width: 100%; }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Header & Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="images/bambuiplants-redpanda.png" alt="Bambuiplants Logo" class="h-10 w-auto" />
-                <span class="self-center text-2xl font-bold whitespace-nowrap text-green-600">Bambui<span class="text-gray-700">plants</span></span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Home</a>
-                <a href="shop.html" class="nav-link text-green-600 hover:text-green-600 font-semibold">Shop</a>
-                <a href="guides.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Planting Guides</a>
-                <a href="blog.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">Bamboo 101</a>
-                <a href="about.html" class="nav-link text-gray-600 hover:text-green-600 font-semibold">About Us</a>
-            </nav>
-            <div class="flex items-center">
-                <a href="shop.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-3 md:py-2 md:px-4 rounded-lg transition duration-300 text-sm md:text-base">Shop Now</a>
-                <button id="mobile-menu-btn" class="md:hidden ml-4 p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none" aria-label="Open main menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img
+            src="images/bambuiplants-redpanda.webp"
+            width="34"
+            height="42"
+            alt=""
+          /><span><span class="accent">Bambui</span>plants</span></a
+        >
+        <nav
+          class="site-nav"
+          data-site-nav
+          data-open="false"
+          aria-label="Main navigation"
+        >
+          <a href="index.html">Home</a
+          ><a href="shop.html" aria-current="page">Shop</a
+          ><a href="guides.html">Planting guides</a
+          ><a href="blog.html">Bamboo 101</a><a href="about.html">Our story</a>
+        </nav>
+        <div class="header-actions">
+          <a class="button button-primary" href="#black-bamboo">Shop bamboo</a
+          ><button
+            class="menu-toggle"
+            data-menu-button
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
         </div>
-        <div id="mobile-nav" class="hidden md:hidden bg-white border-t">
-            <a href="index.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Home</a>
-            <a href="shop.html" class="block py-2 px-6 text-sm text-green-600 hover:bg-gray-50">Shop</a>
-            <a href="guides.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Planting Guides</a>
-            <a href="blog.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">Bamboo 101</a>
-            <a href="about.html" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-50">About Us</a>
-        </div>
+      </div>
     </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-16">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold">Our Bamboo Collection</h1>
-            <p class="text-lg text-gray-600 mt-2">High-quality rhizomes ready for your garden.</p>
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" style="color: var(--green)">
+              Nursery-direct rhizomes
+            </p>
+            <h1 style="font-size: clamp(2.4rem, 5vw, 4.1rem)">
+              Find your bamboo.
+            </h1>
+            <p>
+              Choose a variety, review its growing habit, then buy securely
+              through the marketplace you prefer.
+            </p>
+          </div>
+          <div class="notice">
+            <strong>Before you buy:</strong> Black Bamboo and Madake are running
+            bamboos. They are excellent for privacy and groves, but should be
+            planted with enough space and a
+            <a href="blog.html#running-vs-clumping">root-barrier plan</a> where
+            containment matters.
+          </div>
         </div>
-
-        <!-- Running Bamboo Section -->
-        <section id="running" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 border-b-2 border-green-500 pb-2">Running Bamboo (Phyllostachys)</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product: Black Bamboo -->
-                <article class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                    <div class="relative">
-                        <img src="images/black3.png" alt="Black Bamboo stalks" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
-                        <div class="absolute top-0 right-0 bg-green-500 text-white py-1 px-3 rounded-bl-lg font-bold">Etsy Bestseller</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Black Bamboo</h3>
-                        <p class="text-gray-600 mb-4">Stunning black culms make this a dramatic and popular choice for privacy screens. Cold-hardy and fast-growing.</p>
-                        <div class="mt-4 pt-4 border-t border-gray-200">
-                            <p class="text-xl font-bold text-green-600 mb-3">From $19.95</p>
-                            <div class="flex flex-col space-y-2">
-                                <a href="https://bambuiplants.etsy.com/listing/1892062324/black-bamboo-rhizomes-1-12-pack" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors font-semibold">View on Etsy</a>
-                                <a href="https://ebay.us/m/lqdkeW" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold">View on eBay</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Product: Madake Bamboo -->
-                <article class="bg-white rounded-lg shadow-lg overflow-hidden group">
-                     <img src="images/madake3.png" alt="Madake Bamboo grove" class="w-full h-48 object-cover group-hover:opacity-80 transition-opacity">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Madake Bamboo</h3>
-                        <p class="text-gray-600 mb-4">A giant timber bamboo known for its strong, versatile culms and beautiful, upright growth. Excellent for large properties.</p>
-                        <div class="mt-4 pt-4 border-t border-gray-200">
-                            <p class="text-xl font-bold text-green-600 mb-3">From $19.95</p>
-                            <div class="flex flex-col space-y-2">
-                                <a href="https://bambuiplants.etsy.com/listing/1906264877/madake-bamboo-rhizomes-1-12-pack" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors font-semibold">View on Etsy</a>
-                                <a href="https://ebay.us/m/ebnZv6" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold">View on eBay</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Add more running bamboo products here -->
+      </section>
+      <section class="section section-muted">
+        <div class="container grid two">
+          <article id="black-bamboo" class="card">
+            <img
+              class="product-image"
+              src="images/black-bamboo.webp"
+              width="1000"
+              height="1000"
+              alt="Black Bamboo stalks"
+            />
+            <div class="card-body">
+              <span class="tag">Etsy bestseller</span>
+              <h2>Black Bamboo</h2>
+              <p>
+                Deep green culms mature to a dramatic polished black. A
+                beautiful, fast-growing choice for privacy screens and
+                focal-point planting.
+              </p>
+              <div class="facts">
+                <div class="fact">
+                  <b>Best for</b><span>Privacy screens</span>
+                </div>
+                <div class="fact"><b>Growth habit</b><span>Running</span></div>
+              </div>
+              <p class="muted">
+                <strong>Good to know:</strong> Give Black Bamboo room to spread
+                or use a properly installed root barrier. See
+                <a href="guides.html">planting and aftercare guidance</a> before
+                your order arrives.
+              </p>
+              <div class="product-actions">
+                <a
+                  class="button button-etsy"
+                  href="https://bambuiplants.etsy.com/listing/1892062324/black-bamboo-rhizomes-1-12-pack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy Black Bamboo on Etsy ↗</a
+                ><a
+                  class="button button-ebay"
+                  href="https://ebay.us/m/lqdkeW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy Black Bamboo on eBay ↗</a
+                >
+              </div>
             </div>
-        </section>
-
+          </article>
+          <article id="madake-bamboo" class="card">
+            <img
+              class="product-image"
+              src="images/madake-bamboo.webp"
+              width="1000"
+              height="1000"
+              alt="Madake Bamboo grove"
+            />
+            <div class="card-body">
+              <span class="tag">Classic timber bamboo</span>
+              <h2>Madake Bamboo</h2>
+              <p>
+                A tall, elegant timber bamboo with strong, straight culms. Best
+                suited to larger properties and impressive grove-style planting.
+              </p>
+              <div class="facts">
+                <div class="fact">
+                  <b>Best for</b><span>Large landscapes</span>
+                </div>
+                <div class="fact"><b>Growth habit</b><span>Running</span></div>
+              </div>
+              <p class="muted">
+                <strong>Good to know:</strong> Madake needs a generous planting
+                area. Review our
+                <a href="blog.html#running-vs-clumping">containment guide</a>
+                and give new rhizomes consistent moisture.
+              </p>
+              <div class="product-actions">
+                <a
+                  class="button button-etsy"
+                  href="https://bambuiplants.etsy.com/listing/1906264877/madake-bamboo-rhizomes-1-12-pack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy Madake on Etsy ↗</a
+                ><a
+                  class="button button-ebay"
+                  href="https://ebay.us/m/ebnZv6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy Madake on eBay ↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container content">
+          <h2>Which one is right for you?</h2>
+          <table class="comparison">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Black Bamboo</th>
+                <th>Madake Bamboo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Best use</td>
+                <td>Dense, dramatic privacy screens</td>
+                <td>Large groves and timber-scale landscapes</td>
+              </tr>
+              <tr>
+                <td>Growth habit</td>
+                <td>Running — plan containment</td>
+                <td>Running — plan containment</td>
+              </tr>
+              <tr>
+                <td>Look</td>
+                <td>Black mature culms</td>
+                <td>Classic tall green culms</td>
+              </tr>
+              <tr>
+                <td>Helpful next step</td>
+                <td><a href="guides.html">Read planting guide</a></td>
+                <td><a href="guides.html">Read planting guide</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>After you order</h2>
+          <p>
+            Unpack promptly, keep the rhizome moist, and plant as soon as
+            practical. Our
+            <a href="guides.html">first-24-hours planting guide</a> walks
+            through the essentials, including containers and seasonal care.
+          </p>
+        </div>
+      </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-16">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                  <h3 class="text-lg font-semibold mb-4">Bambuiplants</h3>
-                  <p class="text-gray-400">Your partner in creating beautiful, sustainable landscapes with bamboo.</p>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                  <ul class="space-y-2">
-                    <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
-                    <li><a href="shop.html" class="text-gray-400 hover:text-white">Shop All Bamboo</a></li>
-                    <li><a href="guides.html" class="text-gray-400 hover:text-white">Planting Guides</a></li>
-                    <li><a href="blog.html" class="text-gray-400 hover:text-white">Bamboo 101 Blog</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold mb-4">Our Stores</h3>
-                  <ul class="space-y-2">
-                    <li><a href="https://www.etsy.com/shop/BambuiPlants" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">Etsy Shop</a></li>
-                    <li><a href="https://www.ebay.com/usr/bambuiplants" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">eBay Store</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-                  <p class="text-gray-400 mb-2">Have a question? We'd love to hear from you.</p>
-                  <a href="mailto:bambuiplants@gmail.com" class="text-green-400 hover:text-white transition-colors">bambuiplants@gmail.com</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
-                <p>&copy; <span id="year"></span> Bambuiplants. All Rights Reserved.</p>
-            </div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Bambuiplants</h3>
+          <p>
+            Family-run Alabama nursery for beautiful, sustainable bamboo
+            landscapes.
+          </p>
         </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="shop.html">Shop bamboo</a></li>
+            <li><a href="guides.html">Planting guides</a></li>
+            <li><a href="blog.html">Bamboo 101</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Our stores</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.etsy.com/shop/BambuiPlants"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Etsy shop ↗</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.ebay.com/usr/bambuiplants"
+                target="_blank"
+                rel="noopener noreferrer"
+                >eBay store ↗</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Questions?</h3>
+          <a href="mailto:bambuiplants@gmail.com">bambuiplants@gmail.com</a>
+        </div>
+      </div>
+      <div class="container fineprint">
+        © <span data-year></span> Bambuiplants ·
+        <a href="privacy.html">Privacy</a>
+      </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileNav = document.getElementById('mobile-nav');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileNav.classList.toggle('hidden');
-        });
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
-</body>
+    <script src="site.js" defer></script>
+  </body>
 </html>
